@@ -1,0 +1,4 @@
+﻿  LevelA.cpp
+C:\Users\wilme\OneDrive\Documents\Gaming Class\Project1_Liburd\Entity.h(132,58): warning C4244: 'return': conversion from 'const float' to 'const int', possible loss of data
+C:\Users\wilme\OneDrive\Documents\Gaming Class\Project1_Liburd\Entity.h(133,58): warning C4244: 'return': conversion from 'const float' to 'const int', possible loss of data
+  Project1_Liburd.vcxproj -> C:\Users\wilme\OneDrive\Documents\Gaming Class\Project1_Liburd\Debug\Project1_Liburd.exe
