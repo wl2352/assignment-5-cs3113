@@ -79,6 +79,7 @@ float g_previous_ticks = 0.0f;
 float g_accumulator = 0.0f;
 int secs = 0;
 int lives = 3;
+bool is_paused = false;
 //bool is_main = false;
 
 GLuint g_text_texture_id;
@@ -177,6 +178,10 @@ void process_input()
                 if (g_current_scene == g_main_menu) {
                     g_current_scene->start_game();
                 }
+                break;
+
+            case SDLK_p:
+                is_paused = !is_paused;
                 break;
 
             default:
@@ -320,7 +325,7 @@ int main(int argc, char* argv[])
     while (g_game_is_running)
     {
         process_input();
-        update();
+        if (!is_paused) update();
 
         //if (g_current_scene->m_state.next_scene_id >= 0) switch_to_scene(g_levels[g_current_scene->m_state.next_scene_id]);
 
